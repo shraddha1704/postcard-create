@@ -10,8 +10,7 @@ module.exports = function (API) {
 
   Postcard.create = function (payload) {
     return API.post(this.url, payload);
-  }
+  };
 
   return Postcard;
-
-}
+};

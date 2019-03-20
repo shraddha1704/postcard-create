@@ -2,7 +2,7 @@
 
 var expect  = require('chai').expect;
 var Angular = require('angular');
-var Config = require('../../config');
+var Config  = require('../../config');
 var Sinon   = require('sinon');
 
 require('angular-mocks');
@@ -15,10 +15,10 @@ describe('postcard service', function () {
   var Postcard;
 
   beforeEach(Angular.mock.inject(function ($injector) {
-    $q = $injector.get('$q');
+    $q         = $injector.get('$q');
     $rootScope = $injector.get('$rootScope');
-    API = $injector.get('API');
-    Postcard = $injector.get('Postcard');
+    API        = $injector.get('API');
+    Postcard   = $injector.get('Postcard');
   }));
 
   describe('create', function () {
