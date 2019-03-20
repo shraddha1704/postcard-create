@@ -7,7 +7,7 @@ var Sinon   = require('sinon');
 
 require('angular-mocks');
 
-describe('postcard service', function() {
+describe('postcard service', function () {
 
   var $q;
   var $rootScope;
@@ -21,9 +21,9 @@ describe('postcard service', function() {
     Postcard = $injector.get('Postcard');
   }));
 
-  describe('create', function() {
+  describe('create', function () {
 
-    it('calls the correct endpoint and with correct params', function() {
+    it('calls the correct endpoint and with correct params', function () {
       var payload = { id: 'psc_id' };
 
       Sinon.stub(API, 'post').returns($q.resolve());
