@@ -1,8 +1,8 @@
 'use strict';
 
-var HTML = require('./index.html');
+const HTML = require('./index.html');
 
-module.exports = function ($stateProvider) {
+module.exports = ($stateProvider) => {
 
   $stateProvider.state('login', {
     url: '/login',
