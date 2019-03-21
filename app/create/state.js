@@ -6,7 +6,7 @@ module.exports = function ($stateProvider) {
     url: '/create',
     template: '<h1>Create Page</h1>',
     data: {
-      authenticate: true
+      authenticated: true
     }
   });
 
