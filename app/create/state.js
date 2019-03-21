@@ -1,8 +1,8 @@
 'use strict';
 
-var HTML = require('../views/create.html');
+const HTML = require('../views/create.html');
 
-module.exports = function ($stateProvider) {
+module.exports = ($stateProvider) => {
 
   $stateProvider.state('create', {
     url: '/create',
